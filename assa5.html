@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventOrganizer - Automate Your Events</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>EventOrganizer</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+    <li><a href="#create-event">Create Event</a></li>
+    <li><a href="#my-events">My Events</a></li>
+    <li><a href="#feedback">Feedback</a></li>
+                <li><a href="signup.html">Sign Up</a></li> <!-- Ссылка на страницу регистрации -->
+                <li><a href="signin.html">Sign In</a></li> <!-- Ссылка на страницу входа -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h2>Automate Your Event Planning</h2>
+        <p>Let AI handle scheduling, invitations, and reminders for you. Focus on what really matters – your event!</p>
+        <button>Create Your First Event</button>
+    </section>
+
+    <section class="article01">
+        <div class="content-wrapper">
+            <p class="mbr-text">
+                In a world where event planning can feel like herding cats, EventOrganizer steps in as your digital superhero. With our AI-driven platform, we tackle the chaos, streamline processes, and ensure your events are not just good, but legendary. Get ready to impress your guests and leave them wanting more!
+            </p>
+        </div>
+    </section>
+
+    <section class="article02">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="title-wrapper">
+                        <h2 class="mbr-section-title">Why Choose EventOrganizer?</h2>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="text-wrapper">
+                        <p class="mbr-text">In a world where chaos reigns, EventOrganizer brings order. Our AI-driven platform transforms the way you plan events, making it easier, faster, and way more fun!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features Unleashed Section -->
+<section class="features11">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-4 card">
+                <div class="title-wrapper">
+                    <h2 class="mbr-section-title">Key Features Unleashed</h2>
+                </div>
+            </div>
+            <div class="col-12 col-lg-8 card">
+                <div class="items-wrapper">
+                    <div class="item">
+                        <div class="card-box">
+                            <div class="icon-wrapper">
+                                <span class="mbr-iconfont">&#10004;</span>
+                            </div>
+                            <p class="card-title">AI-Powered Scheduling and Management</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card-box">
+                            <div class="icon-wrapper">
+                                <span class="mbr-iconfont">&#10004;</span>
+                            </div>
+                            <p class="card-title">Real-Time Collaboration Tools</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card-box">
+                            <div class="icon-wrapper">
+                                <span class="mbr-iconfont">&#10004;</span>
+                            </div>
+                            <p class="card-title">Comprehensive Budget Tracking Solutions</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card-box">
+                            <div class="icon-wrapper">
+                                <span class="mbr-iconfont">&#10004;</span>
+                            </div>
+                            <p class="card-title">Post-Event Analytics and Insights</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Create Event Form -->
+    <section id="create-event" class="create-event">
+        <h3>Create a New Event</h3>
+        <form>
+            <label for="event-title">Event Title:</label>
+            <input type="text" id="event-title" name="event-title" required>
+
+            <label for="event-date">Date:</label>
+            <input type="date" id="event-date" name="event-date" required>
+
+            <label for="event-location">Location:</label>
+            <input type="text" id="event-location" name="event-location" required>
+
+            <label for="attendees">Number of Attendees:</label>
+            <input type="number" id="attendees" name="attendees" required>
+
+            <button type="submit">Schedule Event</button>
+        </form>
+    </section>
+
+    <!-- Event List Section -->
+    <section id="my-events" class="event-list">
+        <h3>My Events</h3>
+        <ul>
+            <li><strong>Event:</strong> Tech Conference | <strong>Date:</strong> Nov 20, 2024 | <strong>Location:</strong> Online | <strong>Status:</strong> Invitations Sent</li>
+            <li><strong>Event:</strong> Startup Workshop | <strong>Date:</strong> Dec 5, 2024 | <strong>Location:</strong> San Francisco | <strong>Status:</strong> Scheduling</li>
+        </ul>
+    </section>
+
+    <!-- Feedback Section -->
+    <section id="feedback" class="feedback">
+    <h3>Leave Your Feedback</h3>
+    <form id="feedback-form">
+        <label for="username">Your Name:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="comments">Your Feedback:</label>
+        <textarea id="comments" name="comments" rows="4" required></textarea>
+
+        <label for="rating">Rating:</label>
+        <div class="stars">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+        </div>
+
+        <input type="hidden" id="rating" name="rating" value="0">
+
+        <button type="submit">Submit Feedback</button>
+    </form>
+
+    <!-- Feedback Display Section -->
+    <div id="feedback-list">
+        <h4>User Reviews:</h4>
+        <ul></ul>
+    </div>
+</section>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 EventOrganizer. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Select stars and add hover effect
+        const stars = document.querySelectorAll('.star');
+        let rating = 0;
+    
+        stars.forEach((star) => {
+            star.addEventListener('mouseover', handleHover);
+            star.addEventListener('click', handleRating);
+        });
+    
+        function handleHover(e) {
+            const starValue = e.target.getAttribute('data-value');
+            stars.forEach((star) => {
+                if (star.getAttribute('data-value') <= starValue) {
+                    star.classList.add('selected');
+                } else {
+                    star.classList.remove('selected');
+                }
+            });
+        }
+    
+        function handleRating(e) {
+            rating = e.target.getAttribute('data-value');
+            document.getElementById('rating').value = rating;
+            stars.forEach((star) => {
+                if (star.getAttribute('data-value') <= rating) {
+                    star.classList.add('selected');
+                } else {
+                    star.classList.remove('selected');
+                }
+            });
+        }
+    
+        // Handle feedback submission
+        const feedbackForm = document.getElementById('feedback-form');
+        const feedbackList = document.querySelector('#feedback-list ul');
+    
+        feedbackForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const userName = document.getElementById('username').value;
+            const userComments = document.getElementById('comments').value;
+            const userRating = document.getElementById('rating').value;
+    
+            // Create new feedback list item
+            const newFeedback = document.createElement('li');
+            newFeedback.innerHTML = `<strong>${userName}:</strong> ${userComments} <br> Rating: ${'★'.repeat(userRating)}${'☆'.repeat(5 - userRating)}`;
+    
+            // Add new feedback to the list
+            feedbackList.appendChild(newFeedback);
+    
+            // Reset form
+            feedbackForm.reset();
+            stars.forEach((star) => star.classList.remove('selected'));
+        });
+        // Select all sections and nav links
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".nav-links a");
+
+    window.addEventListener("scroll", () => {
+        let current = "";
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            if (pageYOffset >= sectionTop - 60) {
+                current = section.getAttribute("id");
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove("active");
+            if (link.getAttribute("href").includes(current)) {
+                link.classList.add("active");
+            }
+        });
+    });
+    </script>
+    
+
+</body>
+</html>
